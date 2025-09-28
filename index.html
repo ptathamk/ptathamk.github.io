@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratham Prashanth | Finance Graduate & Data Analyst</title>
+    <meta name="description" content="Fresh BBA Finance graduate with expertise in financial planning, investment analysis, and data-driven decision-making. Skilled in Excel, Power BI, and Python.">
+    <meta name="keywords" content="Finance Graduate, Financial Analyst, Data Analysis, Investment Planning, Python, Excel, Power BI">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 50%, #38a169 100%);
+        }
+        .skill-icon {
+            transition: all 0.3s ease;
+        }
+        .skill-icon:hover {
+            transform: translateY(-5px);
+        }
+        .project-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #38a169;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .experience-card {
+            border-left: 4px solid #38a169;
+            transition: all 0.3s ease;
+        }
+        .experience-card:hover {
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-navy-800">Pratham Prashanth</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-navy-800">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-navy-800">About</a>
+                    <a href="#experience" class="nav-link text-gray-700 hover:text-navy-800">Experience</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-navy-800">Projects</a>
+                    <a href="#skills" class="nav-link text-gray-700 hover:text-navy-800">Skills</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-navy-800">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-700" id="mobile-menu-btn">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-gradient min-h-screen flex items-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Pratham Prashanth</h1>
+                    <h2 class="text-xl md:text-2xl font-semibold mb-6">BBA Finance Graduate | Financial Analyst | Data-Driven Investment Strategist</h2>
+                    <p class="text-lg mb-6">Fresh finance graduate with proven expertise in financial planning, investment analysis, and data visualization. Achieved 175%+ ROI through strategic equity investments and developed interactive financial dashboards.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-6">
+                        <div class="flex items-center">
+                            <i data-feather="phone" class="w-5 h-5 mr-2"></i>
+                            <span>+91 9901399775</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="mail" class="w-5 h-5 mr-2"></i>
+                            <span>prathamk@gmail.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="map-pin" class="w-5 h-5 mr-2"></i>
+                            <span>Dubai, UAE</span>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#projects" class="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300">View Projects</a>
+                        <a href="https://linkedin.com/in/pratham-prashanth" target="_blank" class="bg-white hover:bg-gray-100 text-navy-800 px-6 py-3 rounded-lg font-medium transition duration-300 flex items-center">
+                            <i data-feather="linkedin" class="w-4 h-4 mr-2"></i>LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="bg-white p-2 rounded-full shadow-xl">
+                        <img class="w-64 h-64 rounded-full object-cover" src="images/PrathamPicWithBackround.png" alt="A professional headshot of Pratham Prashanth">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-navy-800 mb-12">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold text-navy-800 mb-4">Professional Profile</h3>
+                    <p class="text-gray-600 mb-6">Fresh BBA Finance graduate with internship and project experience in financial planning, investment analysis, and data-driven decision-making. I combine academic knowledge with practical experience gained through internships at leading financial institutions.</p>
+                    <p class="text-gray-600 mb-6">My expertise spans financial modeling, investment analysis, and data visualization using modern tools like Python, Power BI, and advanced Excel. I have successfully applied fundamental analysis to achieve remarkable investment returns and built interactive financial dashboards that convert complex data into actionable insights.</p>
+                    <p class="text-gray-600">With certifications in Financial Modeling and hands-on experience in wealth management and insurance advisory, I'm well-positioned to contribute to dynamic finance teams focused on equity research and portfolio management.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-navy-800 mb-4">Education & Certifications</h3>
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h4 class="text-xl font-medium text-navy-800">Bachelor of Business Administration (BBA) - Finance</h4>
+                        <p class="text-emerald-600 mb-2">Mangalore University, India | 2022 - 2025</p>
+                        <p class="text-gray-600">Comprehensive finance education with focus on investment analysis, financial planning, and market dynamics.</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="text-lg font-medium text-navy-800 mb-3">Professional Certifications</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center">
+                                <i data-feather="award" class="w-4 h-4 mr-2 text-emerald-600"></i>
+                                Financial Modeling - CFI
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="award" class="w-4 h-4 mr-2 text-emerald-600"></i>
+                                Power BI - LinkedIn Learning
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="award" class="w-4 h-4 mr-2 text-emerald-600"></i>
+                                Advanced Excel - MICE
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="award" class="w-4 h-4 mr-2 text-emerald-600"></i>
+                                AI Workflow Automation - Microsoft
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-navy-800 mb-12">Professional Experience</h2>
+            <div class="space-y-8">
+                <div class="experience-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-navy-800">Wealth Management / Financial Planning Intern</h3>
+                            <p class="text-emerald-600 font-medium">Geojit Financial Services</p>
+                        </div>
+                        <div class="text-gray-600 md:text-right">
+                            <p>Udupi | Feb 2025 - May 2025</p>
+                        </div>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Assisted financial advisors in designing asset allocation plans for retail clients</li>
+                        <li>Conducted needs assessments and contributed to market research reports on equities and mutual funds</li>
+                        <li>Gained exposure to wealth management practices and investment planning</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-navy-800">Insurance Advisor (Part-time)</h3>
+                            <p class="text-emerald-600 font-medium">HDFC Life</p>
+                        </div>
+                        <div class="text-gray-600 md:text-right">
+                            <p>Udupi | Nov 2024 - Present</p>
+                        </div>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-gray-600">
+                        <li>Guided 100+ clients in selecting appropriate insurance products</li>
+                        <li>Built financial literacy skills by simplifying insurance concepts into clear client recommendations</li>
+                        <li>Developed consultative communication and client relationship management skills</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-navy-800 mb-12">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card bg-white border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center">
+                        <i data-feather="trending-up" class="w-16 h-16 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy-800 mb-2">UAE Stock Market Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Designed a Streamlit-based dashboard with interactive charts (Plotly) for 50+ tickers; integrated error handling, user controls, and GitHub deployment.</p>
+                        <div class="flex space-x-3">
+                            <a href="https://uae-stock-dashboard-by-pratham.streamlit.app" target="_blank" class="text-emerald-600 hover:text-emerald-800 flex items-center">
+                                <i data-feather="external-link" class="mr-1 w-4 h-4"></i> Live Demo
+                            </a>
+                            <span class="text-gray-400">|</span>
+                            <span class="text-gray-500 text-sm">Python, Streamlit, Plotly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                        <i data-feather="file-text" class="w-16 h-16 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy-800 mb-2">Financial Statement Analysis Tool</h3>
+                        <p class="text-gray-600 mb-4">Built a Python tool to parse balance sheets, income statements, and cash flows; automated ratio analysis (ROE, ROA, Current Ratio) and generated buy/hold/sell recommendations.</p>
+                        <div class="flex space-x-3">
+                            <span class="text-gray-500 text-sm">Python, Pandas, Financial Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white border border-gray-200 rounded-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center">
+                        <i data-feather="dollar-sign" class="w-16 h-16 text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy-800 mb-2">Personal Equity Investments</h3>
+                        <p class="text-gray-600 mb-4">Applied fundamental analysis to achieve 175%+ ROI on equity picks (Tipsmusic, RECLTD). Demonstrated practical application of financial analysis skills.</p>
+                        <div class="flex items-center text-emerald-600 font-semibold">
+                            <i data-feather="trending-up" class="w-4 h-4 mr-1"></i>
+                            175%+ ROI Achievement
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-navy-800 mb-12">Skills & Expertise</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-navy-800 mb-6">Finance Expertise</h3>
+                    <div class="space-y-3">
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-emerald-600">Financial Planning</p>
+                        </div>
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-emerald-600">Portfolio Analysis</p>
+                        </div>
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-emerald-600">Ratio Analysis</p>
+                        </div>
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-emerald-600">Equity Research</p>
+                        </div>
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-emerald-600">Wealth Management</p>
+                        </div>
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-emerald-600">Investment Advisory</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-navy-800 mb-6">Technical Skills</h3>
+                    <div class="space-y-3">
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-blue-600">Excel (Advanced)</p>
+                        </div>
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-blue-600">Power BI</p>
+                        </div>
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-blue-600">Python (Pandas, Plotly)</p>
+                        </div>
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-blue-600">Streamlit</p>
+                        </div>
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-blue-600">Git</p>
+                        </div>
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-blue-600">Financial Modeling</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-navy-800 mb-6">Professional Skills</h3>
+                    <div class="space-y-3">
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-purple-600">Analytical Thinking</p>
+                        </div>
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-purple-600">Problem Solving</p>
+                        </div>
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-purple-600">Client Communication</p>
+                        </div>
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-purple-600">Market Research</p>
+                        </div>
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-purple-600">Data Visualization</p>
+                        </div>
+                        <div class="skill-icon bg-white p-4 rounded-lg text-center shadow-sm">
+                            <p class="font-medium text-purple-600">Financial Reporting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-2xl font-semibold text-navy-800 mb-6 text-center">Key Achievements</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg text-center shadow-sm">
+                        <div class="text-3xl font-bold text-emerald-600 mb-2">175%+</div>
+                        <p class="text-gray-600">ROI on Personal Investments</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center shadow-sm">
+                        <div class="text-3xl font-bold text-emerald-600 mb-2">100+</div>
+                        <p class="text-gray-600">Clients Advised (Insurance)</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center shadow-sm">
+                        <div class="text-3xl font-bold text-emerald-600 mb-2">50+</div>
+                        <p class="text-gray-600">Stock Tickers Analyzed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-navy-800 mb-12">Get In Touch</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <p class="text-lg text-gray-600 text-center mb-8">
+                        I'm actively seeking opportunities in financial analysis, investment planning, and data-driven finance roles. Let's connect to discuss how my skills can contribute to your team.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <i data-feather="phone" class="w-8 h-8 text-emerald-600 mx-auto mb-2"></i>
+                            <p class="font-medium text-navy-800">Phone</p>
+                            <p class="text-gray-600">+91 9901399775</p>
+                        </div>
+                        <div class="text-center">
+                            <i data-feather="mail" class="w-8 h-8 text-emerald-600 mx-auto mb-2"></i>
+                            <p class="font-medium text-navy-800">Email</p>
+                            <p class="text-gray-600">prathamk@gmail.com</p>
+                        </div>
+                        <div class="text-center">
+                            <i data-feather="linkedin" class="w-8 h-8 text-emerald-600 mx-auto mb-2"></i>
+                            <p class="font-medium text-navy-800">LinkedIn</p>
+                            <a href="https://linkedin.com/in/pratham-prashanth" target="_blank" class="text-emerald-600 hover:text-emerald-800">Connect with me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Pratham Prashanth. All rights reserved.</p>
+            <p class="text-sm text-gray-300 mt-2">Currently based in Dubai, UAE | Open to opportunities worldwide</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Feather icons
+        feather.replace();
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            // Add mobile menu functionality if needed
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
